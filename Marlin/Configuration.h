@@ -379,10 +379,19 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+  // M303 E0 C8 S200
+  // bias: 59 d: 59 min: 198.69 max: 201.35 Ku: 56.46 Tu: 15.40
+  // Classic PID
+  // Kp: 33.88 Ki: 4.40 Kd: 65.21
+  // PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
+  #define DEFAULT_Kp 33.88
+  #define DEFAULT_Ki 4.40
+  #define DEFAULT_Kd 65.21
+
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
